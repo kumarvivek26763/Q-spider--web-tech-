@@ -21,7 +21,8 @@ html, body{
     justify-content: center;
      /*(y-axis) flex-start, flex-end, center*/
     align-items: center;
-    gap: 20px;
+    flex-wrap: wrap;
+    
 }
 .item{
     height: 100px;

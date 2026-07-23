@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+html, body{
+    height: 100%;
+    width: 100%;
+
+}
+.nav-bar{
+    height: 60px;
+    width: 100%;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    color: whitesmoke;
+
+
+}
+a{
+    text-decoration: none;
+    color:inherit;
+    font-weight: 600;
+    transition: 0.2s;
+}
+.nav-link{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+a:hover{
+    transform: scale(1.1);
+    }
+
+
+
+
