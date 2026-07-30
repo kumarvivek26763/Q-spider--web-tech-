@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+        div{
+            height: 200px;
+            width: 200px;
+            position: absolute;
+
+        }
+        .card1{
+            background-color: red;
+            z-index: 5;
+
+        }
+        .card2{
+            background-color: aqua;
+            top: 100px;
+            left: 100px;
+
+            z-index: 1;
+        }
+        .card3{
+            background-color: purple;
+            top: 50px;
+            left: 50px;
+            z-index: 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="card1">card1</div>
+    <div class="card2">card2</div>
+    <div class="card3">card3</div>
+    
+</body>
+</html>

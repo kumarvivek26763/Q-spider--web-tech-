@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body, html{
+    height: 100%;
+    width: 100%;
+
+}
+div{
+    height: 200px;
+    width: 200px;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.box1{
+    background-color: yellow;
+     position: static; /*DEFAULT VALUE  */
+     top: 200px;
+     left: 200px;
+    
+}
+.box2{
+    background-color: red;
+    position:sticky;
+     bottom: 100px;
+       /* THRESHOLD POINT */
+}
+.box3{
+    background-color: aqua;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+
+}
+.box4{
+    background-color:purple;
+    position: relative;
+     top: 50px;
+     left:calc(100% - 200px);
+     transform: rotate(270deg);
+}
+
+section{
+    height: 600px;
+    width: 600px;
+    background-color: orange;
+    position: relative;
+
+
+}
+
+.box5{
+     background-color: lightgreen;
+     position: absolute;
+     right: 0;
+}
