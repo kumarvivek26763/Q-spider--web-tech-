@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+        .box1{
+            height: 200px;
+            width: 200px;
+            border: 2px solid black;
+            background-color: aqua;
+            animation-name: boxSlide1;
+            animation-duration: 2s;
+            animation-iteration-count: 5;
+            position: absolute;
+        }
+        .box2{
+            height: 200px;
+            width: 200px;
+            border: 2px solid black;
+            background-color: lightgreen;
+            position: absolute;
+            border-radius: 10px;
+            animation-name: boxSlide2;
+            animation-duration: 30s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            border-radius: 50%;
+
+        }
+        @keyframes boxSlide1 {
+            from{
+                top:0;
+                left: 0;
+
+            }
+            to{
+                top:0;
+                left: calc(100% - 200px);
+            }
+        }
+
+        @keyframes boxSlide2 {
+            0%{
+                top:0;
+                left: 0;
+            }
+            25%{
+                top: 0;
+                left: calc(100% - 200px);
+
+            }
+            50%{
+                top: calc(100% - 200px);
+                left: calc(100% - 200px);
+
+            }
+            75%{
+                top: calc(100% - 200px);
+                left: 0;
+
+            }
+            100%{
+                top: 0;
+                left: 0;
+
+            }
+        }
+    </style>
+</head>
+<body>
+    
+<!-- <div class="box1">
+    hello
+</div> -->
+
+<div class="box2">
+    box2
+</div>
+
+</body>
+</html>
